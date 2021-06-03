@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Browser1.jnlp">
+  <information>
+    <title>Browser1</title>
+    <vendor>dipu</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Browser1.jar" size="23980" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Browser1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="browser1.Browser1"  name="Browser1" />
+  <update check="always"/>
+</jnlp>

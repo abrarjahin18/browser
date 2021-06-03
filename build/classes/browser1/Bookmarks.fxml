@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="browser1.BookmarksController">
+    <stylesheets>
+        <URL value="@bookmarks.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="bookmarkTableView" layoutX="5.0" layoutY="67.0" prefHeight="492.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="link" prefWidth="588.0" text="Links" />
+        </columns>
+      </TableView>
+      <Label layoutX="191.0" layoutY="14.0" prefHeight="50.0" prefWidth="186.0" text="Bookmarks" textFill="#52a6b5">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookmarkClearButton" layoutX="543.0" layoutY="39.0" mnemonicParsing="false" text="Clear" />
+   </children>
+</AnchorPane>
